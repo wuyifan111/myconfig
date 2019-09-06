@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: myconifg
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/wuyifan111/aaaaaa.git
+server:
+  port: 9003
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: myconfig9003
+    prefer-ip-address: true
